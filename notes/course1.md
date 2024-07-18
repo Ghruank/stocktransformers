@@ -15,6 +15,8 @@ RNNs are used for sequential data like speech and time series
 performance of a NN increases with-> 1) increase in amount of data and 2) making a larger NN
 depends on data, computation and the algorithm used
 
+**END OF WEEK1**  
+
 ## WEEK2
 
 in week2, the following stuff is covered:
@@ -40,9 +42,31 @@ this helps us to find the structure of the NN, using forward and backpropogation
 forward propogation used to find the required equation
 back propogation used to find the gradient descent and weights/biases
 
-**Vectorisation**
+**Vectorisation**  
 used instead of for loops. for loops iterate through each of the data set and do the operation. using numpy we perform vectorisation where all of the operations are performed at once, reducing time required to process the data.
 eg Z = np.dot(w,x) + b
+
+**Broadcasting**  
+this is an abstract feature of python where a scalar or a vector resizes itself to get added to a well defined vector.
+for eg if you add Z= [1,2,3] + 100, since 100 is a scalar, it will resize itself to a (1,3) matrix  
+i.e [1,2,3] + [100,100,100] = [101,102,103]  
+this is called broadcasting in python  
+
+### Making a Logistic Regression Model  
+in this course we successfully made a logistic regression model to identify whether a pic is that of a cat or not  
+
+making a model involves various steps, such as  
+1. extracting x\_train,x\_test, y\_train, y\_test from the dataset
+2. preprocessing the datasets
+3. initialising parameters w and b to zeros
+4. forward propogating to find the cost function
+5. backpropogating to minimize the cost function by gradient descent
+6. backpropogating multiple times till the cost function is minimised. here the model is trained
+7. using the model on the testing datasets to predict the accuracy of the model
+
+as such we have made a model. file uploaded in the coursera assignments folder.  
+
+**END OF WEEK 2**  
 
 
 
