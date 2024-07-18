@@ -25,17 +25,17 @@ in week2, the following stuff is covered:
 5. Notation and representation of training examples and labels
 6. Introduction to matrix notation for input features and output labels
 
-**Logistic Regression**
-Logistic regression is a statistical method for modeling the probability of a binary outcome based on one or more predictor variables. It uses the logistic function to model the probability of the default class.
+**Logistic Regression**  
+Logistic regression is a statistical method for modeling the probability of a binary outcome based on one or more predictor variables. It uses the logistic function to model the probability of the default class.  
 
-we have an x vector, we multiply it by w(t) (transpose of vector w which has same dimension of x) to make it a scalar quantity,add a scalar b to it, take the sigmoid of it for it to lie between 0 and 1, and this becomes the y^, which is thepredicted value of y. ofcourse since w and b are random, y^ will not be equal to y, and as such we find w and b through backpropogration, specifically done using gradient descent. the loss function and the cost function helps to find the error between y^ and y, and these function need to be minimised for y^ to be almost equal to y. these functions can be minimised using gradient descent, as they are related to dw and db, and when dw or db is 0, we can say that J(w,b), which is a convex 3d graph, has attained minimum. this w is updated as w = w - a.dw, where a is the learning rate.
+we have an x vector, we multiply it by w(t) (transpose of vector w which has same dimension of x) to make it a scalar quantity,add a scalar b to it, take the sigmoid of it for it to lie between 0 and 1, and this becomes the y^, which is thepredicted value of y. ofcourse since w and b are random, y^ will not be equal to y, and as such we find w and b through backpropogration, specifically done using gradient descent. the loss function and the cost function helps to find the error between y^ and y, and these function need to be minimised for y^ to be almost equal to y. these functions can be minimised using gradient descent, as they are related to dw and db, and when dw or db is 0, we can say that J(w,b), which is a convex 3d graph, has attained minimum. this w is updated as w = w - a.dw, where a is the learning rate.  
 
-*Terminologies*
-Sigmoid(z) = 1/1+e^-z
-Loss (error) function = L(y^,y) = -[y log(y^) + (1-y) log(1-y^)]
-Cost function = J(w,b) = 1/m * summation[L(y^,y)]
+*Terminologies*  
+Sigmoid(z) = 1/1+e^-z  
+Loss (error) function = L(y^,y) = -[y log(y^) + (1-y) log(1-y^)]  
+Cost function = J(w,b) = 1/m * summation[L(y^,y)]  
 
-**Computation graph**
+**Computation graph**  
 this helps us to find the structure of the NN, using forward and backpropogation
 forward propogation used to find the required equation
 back propogation used to find the gradient descent and weights/biases
