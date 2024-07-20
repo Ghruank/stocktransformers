@@ -1,3 +1,4 @@
+# DEEP LEARNING 
 # COURSE 1 -
 ## WEEK 1-
 **Introduction to deep learning and neural network**
@@ -75,3 +76,107 @@ _BROADCASTING –_
 * Using this we can resize vectors/scalars to give a shape appropriate for performing arithmetic operations with other matrices. 
 * For (m,n) + (1,n) -> the (1,n) resizes to (m,n) 
 * For (m,n) + k -> k changes to (m,1) with all m values as k 
+
+## WEEK 3
+
+IMPLEMENTATION AND REPRESENTATION OF NEURAL NETWORKS ( 1 hidden layer )
+
+_NEURAL NETWORK REPRESENTATION –_
+
+* We represent different layers in neural network using superscript [n]
+* Different nodes is a layer are represented by subscript 
+* Hidden layer values are not seen in the training set
+* a refers to activation ie the output that each layer passes on to the next
+* a<sup>[n]</sup> is output of layer n
+* 2 layer NN is a NN with one hidden layer 
+
+For every node -
+![node](Images/node.png)
+
+* We then combine corresponding values of each node in a layer in a vector stacked vertically for all z,w,b,a
+ 
+Vector representation for 1 training example -
+![1t](Images/1_training_vector.png)
+
+Vectorizing for m training examples -
+
+![m](Images/m_training_vector.png)
+
+* Horizontal traversal of a vector goes to next training example
+* Vertical traversal goes to next hidden unit 
+
+_ACTIVATION FUNCTIONS -_
+
+* Hidden layers – tanh since its mean is around 0 which helps centre data around 0 ( unlike sigmoid)
+* Final layer – sigmoid if we want binary classification (0 or 1)
+
+* Drawback of tanh-
+For very small or large z , slope->0 and hence gradient descent becomes very slow
+
+* Overcome using ReLU (Rectify Linear Unit)
+
+![activation](Images/activation.png)
+
+Need of activation :
+
+* With a linear or no activation functions the hidden layers will give linear outputs only and hence we are discrediting the use of neural network . Its no better than a simple logistic regression.
+
+Derivatives of activation functions :
+
+* Sigmoid- g’(z) = g(z)(1-g(z))
+* Tanh -  g’(z) = 1-(g(z))<sup>2</sup>
+For large and small z , slope ->0
+* ReLU = g’(z) = 0 if z<0 and 1 if z>=0
+
+_INITIALIZING WEIGHTS –_
+
+* If weight matrix of size ( n<sup>[1]</sup>,n<sup>[0]</sup>) is initialzed to 0 , all nodes in a layer will end up performing the same function no matter how deep it is 
+* Bias can be 0 
+* So we initialize parameters randomly 
+* W<sup>[1]</sup> = np.random.randn(n<sup>[0]</sup>,n<sup>[1]</sup>) * 0.01
+* 0.01 and not large value since otherwise Z will become too large and problem of slope->0 for activation fn occurs
+
+## WEEK 4
+
+DEEP NEURAL NETWORKS - with more hidden layers 
+
+_NOTATIONS-_
+
+* L = no. of layers ( hidden + output )
+* n<sup>[l]</sup> is no. of nodes in lth layer
+* a<sup>[l]</sup> is no. of activations in lth layer , a<sup>[l]</sup>= g<sup>[l]</sup>(z<sup>[l]</sup>)
+* w<sup>[l]</sup> and b<sup>[l]</sup> are weights for z<sup>[l]</sup> 
+* a<sup>[L]</sup> is y^
+
+
+_MATRIX DIMENSIONS -_
+
+* For 1 training example :
+![1]("Images/matrix_dim1.png")
+
+* For m training examples :
+![m](Images/matrix_dim2.png)
+
+_DEEP NN-_
+
+* They are required to detect images or speech to text as they require several intermediate learnings 
+* a shallow NN would require more nodes as compared to deep NN for the same function
+
+_FORWARD AND BACKPROPAGATION-_
+
+* Overall formulas -
+![f](Images/Fandb_prop.png)
+
+* Flowchart -
+![f](Images/forwbackprop.png)
+
+_PARAMETERS AND HYPERPARAMETERS -_
+
+* Parameters - w[1], b[1], etc
+* Hyperparameters - learning rate(alpha), iterations , no. of layers , hidden units, activation fn -> they determine the parameters 
+* choose alpha that converges the cost fn, ie eventually reduces it to near 0 
+
+
+
+
+
