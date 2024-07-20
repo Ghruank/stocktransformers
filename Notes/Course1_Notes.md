@@ -39,25 +39,25 @@ _NOTATIONS -_
 _SIGMOID FUNCTION –_
 
 * We need sigmoid to give a value between 0 and 1 since z by itself can be any value
-![sigmoid](Images\sigmoid.png)
+![sigmoid](Images/sigmoid.png)
  
 _LOSS FUNCTION – L_
 
 * Measures how good y^ is as compared to y 
 * So this ensures loss is minimum for both y=0 and y=1 when y^ is a good prediction ( ie close to y)
-![loss](Images\loss.png)
+![loss](Images/loss.png)
 
 _COST FUNCTION – J_
 
 * Loss function was for single training example , cost is for entire training set
 * It is a convex function with only 1 global minima 
-![cost](Images\cost.png)
+![cost](Images/cost.png)
 
 _GRADIENT DESCENT -_
 
 * It helps us find w and b that minimize the cost function J ( ie give y^ almost close to y) through backpropagation
 * We update w and b in every iteration using below function and determine cost after every iteration until it becomes say minimum
-![gd](Images\gradient_descent.png)
+![gd](Images/gradient_descent.png)
 
 _COMPUTATION GRAPHS –_
 
@@ -68,7 +68,7 @@ _VECTORIZATION –_
 
 * Using np.dot to multiply two vectors instead of using for loop reduces computation time and is useful for large datasets.
 * Both GPU and CPU have parallel instructions – SIMD which works in case of dot product 
-![v](Images\vectorization.png)
+![v](Images/vectorization.png)
 
 _BROADCASTING –_
 
