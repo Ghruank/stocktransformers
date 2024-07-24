@@ -1,6 +1,6 @@
 # COURSE 2
 
-##WEEK 1  
+## WEEK 1  
 
 ---  
 

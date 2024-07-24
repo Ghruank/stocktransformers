@@ -2,6 +2,8 @@
 
 ## WEEK 1
 
+---
+
 week 1 covers neural network basics, introduction to deep learning, how a simple neural network works and how it can be made more efficient and complex by adding hidden layers
 
 supervised learning-> where inputs and outputs are available and the model is trained on that
@@ -17,7 +19,9 @@ depends on data, computation and the algorithm used
 
 **END OF WEEK1**  
 
-## WEEK2
+## WEEK2  
+
+---
 
 in week2, the following stuff is covered:
 1. Techniques for processing a training set without using an explicit for loop
@@ -67,6 +71,11 @@ making a model involves various steps, such as
 as such we have made a model. file uploaded in the coursera assignments folder.  
 
 **END OF WEEK 2**  
+
+## WEEK 3
+
+---
+
 
 
 
