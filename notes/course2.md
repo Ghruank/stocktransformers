@@ -122,7 +122,7 @@ bias correction: the graph will start from 0 and slwly move upwards to meet the 
 **Gradient descent with momentum**
 
 instead of the normal gradient descent, we incorporate the principles of exponentially weighted averages.   
-![alt text](/images/image.png)
+![alt text](images/image.png)
 
 this is how we update the parameters
 
@@ -130,14 +130,14 @@ this is how we update the parameters
 
 rms prop is just like gradient descent with momentum but uses the squares of the data (ie dW and db)  
 here is the implementation  
-![alt text](/images/image-1.png)  
+![alt text](images/image-1.png)  
 
 In gradient descent with momentum, the update rule for the parameters includes a momentum term that accumulates a fraction of the previous gradients. This helps to smooth out the updates and accelerate convergence. On the other hand, RMSprop uses a different update rule that adapts the learning rate based on the magnitude of the gradients. Gradient descent with momentum does not adapt the learning rate based on the magnitude of the gradients. It uses a fixed learning rate and adjusts the updates based on the accumulated momentum. In contrast, RMSprop adapts the learning rate for each parameter individually based on the magnitude of the gradients. It divides the learning rate by the square root of the exponentially weighted average of the squared gradients.  
 
 **Adam Optimization algorithm**  
 
 adam algo is basically using both gradient descent with momentum and rmsprop. here is the flow:  
-![alt text](/images/image-2.png)  
+![alt text](images/image-2.png)  
 
 note that the epsilon term in the denominator is a small value used as a buffer incase the denominator becomes zero.
 
@@ -146,5 +146,5 @@ adam algo helps the model train quickly, being a powerful algo for gradient desc
 **Learning rate decay**  
 
 as much as the parameters attain their minima by gradient descent it is essential to minimise the learning rate, as it is already approaching the minima and we dont want it to create noise around the minima or bypass it. as such a formula is devised to update the learning rate parameter.  
-![alt text](/images/image-3.png)  
+![alt text](images/image-3.png)  
 
