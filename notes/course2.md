@@ -107,3 +107,44 @@ Gradient checking is a technique used to verify the correctness of the implement
 
 ---
 
+**Mini Batch Gradient Descent**  
+
+instead of applying gradient descent on the entire training set and propogating through the entire set for each time you perform gradient descent, we create batches of data called epochs, and then perform gradient descent in these mini batches. this is called mini batch gradient descent. batch gradient descent is when the size of the mini batch equals to the size of the training set, i.e. iterating through the entire data. these epochs are ranged between 64 and 512, in powers of two. iterating through these epoches we find the optimal parameters for one epoch, and use them for the next and optimise them again, and so on till it reaches the last epoch.
+
+**Exponentially weighted averages**  
+
+ewa is used to compute the the trends of the moving averages. it uses collection of past data, say 10 days or 50 days and add the current ones to create a graph in accordance with the trend. this removes the noise in the data and evens out the data graph  
+
+Vt = (beta)\*v(t-1) + (1-beta)\*data(t)  
+
+bias correction: the graph will start from 0 and slwly move upwards to meet the expected graph, but we dont want this unneccasry bias. hence there is  abias correction added. vt is divided by (1 - beta ^t). this would be significant during the earlier values of t but would then fade over as beta < 1. hence the bias generated during the initial t phase gets corrected.  
+
+**Gradient descent with momentum**
+
+instead of the normal gradient descent, we incorporate the principles of exponentially weighted averages.   
+![alt text](/images/image.png)
+
+this is how we update the parameters
+
+**RMSprop**
+
+rms prop is just like gradient descent with momentum but uses the squares of the data (ie dW and db)  
+here is the implementation  
+![alt text](/images/image-1.png)  
+
+In gradient descent with momentum, the update rule for the parameters includes a momentum term that accumulates a fraction of the previous gradients. This helps to smooth out the updates and accelerate convergence. On the other hand, RMSprop uses a different update rule that adapts the learning rate based on the magnitude of the gradients. Gradient descent with momentum does not adapt the learning rate based on the magnitude of the gradients. It uses a fixed learning rate and adjusts the updates based on the accumulated momentum. In contrast, RMSprop adapts the learning rate for each parameter individually based on the magnitude of the gradients. It divides the learning rate by the square root of the exponentially weighted average of the squared gradients.  
+
+**Adam Optimization algorithm**  
+
+adam algo is basically using both gradient descent with momentum and rmsprop. here is the flow:  
+![alt text](/images/image-2.png)  
+
+note that the epsilon term in the denominator is a small value used as a buffer incase the denominator becomes zero.
+
+adam algo helps the model train quickly, being a powerful algo for gradient descent.  
+
+**Learning rate decay**  
+
+as much as the parameters attain their minima by gradient descent it is essential to minimise the learning rate, as it is already approaching the minima and we dont want it to create noise around the minima or bypass it. as such a formula is devised to update the learning rate parameter.  
+![alt text](/images/image-3.png)  
+
