@@ -148,3 +148,7 @@ adam algo helps the model train quickly, being a powerful algo for gradient desc
 as much as the parameters attain their minima by gradient descent it is essential to minimise the learning rate, as it is already approaching the minima and we dont want it to create noise around the minima or bypass it. as such a formula is devised to update the learning rate parameter.  
 ![alt text](images/image-3.png)  
 
+**END OF WEEK2**
+
+## WEEK 3
+---
