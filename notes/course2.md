@@ -152,3 +152,27 @@ as much as the parameters attain their minima by gradient descent it is essentia
 
 ## WEEK 3
 ---
+**Hyperparameters Tuning**  
+
+preference:  
+1) alpha (learning rate)  
+2) mini batch size, beta (gradient descent with momentum), hidden units  
+3) no. of layers, learning rate decay  
+4) adam hyperparamters (b1, b2, epsilon)
+
+pandas approach: babysit one model by tuning hyperparemeters  
+caviar approach: make many models of different hyperparamters and select the best one  
+
+**Batch Normalisation**  
+
+istead of normalizing only the input layer, we normalise all layers here. Batch normalization is an algorithm that helps in the training of neural networks by normalizing the mean and variance of hidden unit values. It allows for more efficient training of deep networks and a wider range of hyperparameters that work well.   
+
+due to the covariate shift it becomes quite difficult for the model to adapt to slightly different data than what it was trained for, hence batch norm helps solve this.  
+![alt text](images/image-4.png)  
+
+**Softmax regression**  
+this is used in case of multi class classification, instead of our usual binary classification which uses sigmoid.  
+![alt text](images/image-5.png)  
+
+loss function for softmax:  
+![alt text](images/image-6.png)
