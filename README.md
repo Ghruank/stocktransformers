@@ -90,3 +90,16 @@ It can be used to spot divergences, overbought and oversold conditions, and cent
 Bollinger Bands help gauge the volatility of stocks to determine if they are over or undervalued.
 
 Bands appear on stock charts as three lines that move with the price. The center line is the stock price's 20-day simple moving average (SMA). The upper and lower bands are set at a certain number of standard deviations, usually two, above and below the middle line.
+
+## Transformer Architecture
+Transformers are neural network architectures that excel in handling sequential data by using self-attention mechanisms to weigh the importance of each element in the sequence. Unlike traditional models, transformers process input in parallel, allowing for faster training and better handling of long-range dependencies.  
+
+
+LSTM's might struggle for long range dependencies. They still face challenges when it comes to learning relationships across very distant time steps.  
+
+Unlike traditional recurrent neural networks (RNNs), Transformers leverage attention mechanisms to weigh the significance of each input element concerning others. This mechanism allows them to process information in parallel, enhancing efficiency in analyzing complex financial data patterns. This makes transformers particularly powerful for capturing both short-term and long-term dependencies in a sequence  
+
+## Informer Architecture
+
+informer architecture
+
