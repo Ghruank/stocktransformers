@@ -2,6 +2,8 @@
 
 A Project by Khush Agrawal, Yashvi Mehta and Ghruank Kothare and mentored by Tvisha Vedant and Kindipsingh Malhi
 
+[Project Blog](https://yashvimehta03.github.io/stock-transformers-blog/informer/)
+
 ## 📌 Aim
 
 In the modern capital market, the price of a stock is often considered to be highly volatile and unpredictable because of various social, financial, political and other dynamic factors that can bring catastrophic financial loss to the investors. This project aims to predict stock prices using transformer architecture by utilising the concept of time series forecasting.
@@ -100,5 +102,9 @@ Unlike traditional recurrent neural networks (RNNs), Transformers leverage atten
 
 ## Informer Architecture
 
-informer architecture
+The Informer architecture is a time-series forecasting model that leverages the efficient attention mechanism called ProbSparse Self-Attention. It reduces the quadratic complexity of standard attention by focusing on key sparse data points, allowing for faster processing on long sequences. With a combination of encoder-decoder architecture, it improves both speed and accuracy in handling large-scale time-series data.
+
+### ProbSparse Attention mechanism
+
+The self-attention scores form a long-tail distribution, where the "active" queries lie in the "head" scores and "lazy" queries lie in the "tail" area. We designed the ProbSparse Attention to select the "active" queries rather than the "lazy" queries. The ProbSparse Attention with Top-u queries forms a sparse Transformer by the probability distribution. Why not use Top-u keys? The self-attention layer's output is the re-represent of input. It is formulated as a weighted combination of values w.r.t. the score of dot-product pairs. The top queries with full keys encourage a complete re-represent of leading components in the input, and it is equivalent to selecting the "head" scores among all the dot-product pairs. If we choose Top-u keys, the full keys just preserve the trivial sum of values within the "long tail" scores but wreck the leading components' re-represent.
 
