@@ -1,8 +1,8 @@
 # Stock Transformers
 
-A Project by Khush Agrawal, Yashvi Mehta and Ghruank Kothare and mentored by Tvisha Vedant and Kindipsingh Malhi
+A Project by [Khush Agrawal](https://github.com/Khushmagrawal), [Yashvi Mehta](https://github.com/YashviMehta03) and [Ghruank Kothare](https://github.com/Ghruank) and mentored by [Tvisha Vedant](https://github.com/tvilight4) and [Kindipsingh Malhi](https://github.com/kindipsingh)
 
-[Project Blog](https://yashvimehta03.github.io/stock-transformers-blog/informer/)
+[Project Blog](https://yashvimehta03.github.io/stock-transformers-blog/)
 
 ## 📌 Aim
 
@@ -27,13 +27,101 @@ In this project :
 | **Programming Languages**      | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)                                                                                                                                   |
 | **Frameworks**                 | ![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)                                                                                                                        |
 | **Libraries**                  | ![YFinance](https://img.shields.io/badge/-YFinance-013220?style=flat) ![Keras](https://img.shields.io/badge/-Keras-D00000?style=flat&logo=keras&logoColor=white)                                                               |
-| **Deep Learning Models**       | ![LSTM](https://img.shields.io/badge/-LSTM-FF9900?style=flat&logo=tensorflow&logoColor=white) ![Informer](https://img.shields.io/badge/-Informer-343434?style=flat) ![Transformers](https://img.shields.io/badge/-Transformers-FF9900?style=flat&logo=tensorflow&logoColor=white) |
+| **Deep Learning Models**       | ![LSTM](https://img.shields.io/badge/-LSTM-FF9900?style=flat&logo=tensorflow&logoColor=white) ![Transformers](https://img.shields.io/badge/-Transformers-FF9900?style=flat&logo=tensorflow&logoColor=white) ![Informer](https://img.shields.io/badge/-Informer-343434?style=flat)|
 | **Tools**                      | ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) ![Google Colab](https://img.shields.io/badge/-Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white) ![Kaggle](https://img.shields.io/badge/-Kaggle-20BEFF?style=flat&logo=kaggle&logoColor=white) |
 | **Visualization & Analysis**   | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat&logo=python&logoColor=white)                                                                                                                           |
 
 ## 📂 File Structure
 
-Add here
+### Root
+```
+├── README.md 
+│ 
+├── Assignments 
+│   ├── C2W1_Gradient_Checking.ipynb  
+│   ├── C2W1_Initialization.ipynb  
+│   ├── C2W1_Regularization.ipynb 
+│   ├── C2W2_Optimization_methods.ipynb
+│   ├── C2W3_Tensorflow_introduction.ipynb
+│   ├── Logistic_Regression_with_a_Neural_Network_mindset.ipynb
+│   ├── Planar_data_classification_with_one_hidden_layer.ipynb
+│   ├── Python_Basics_with_Numpy.ipynb
+│   └── README.md
+│
+├── informer_shuffle
+│   └── informer_code
+│       └── Informer2020-main
+│           ├── Dockerfile
+│           ├── environment.yml
+│           ├── LICENSE
+│           ├── main_informer.ipynb
+│           ├── main_informer.py
+│           ├── Makefile
+│           ├── README.md
+│           ├── requirements.txt
+│           │
+│           ├── data
+│           │   ├── data_loader.py
+│           │   ├── infosys (1).csv
+│           │   └── __init__.py
+│           │
+│           ├── exp
+│           │   ├── exp_basic.py
+│           │   ├── exp_informer.py
+│           │   └── __init__.py
+│           │
+│           ├── img
+│           │   ├── data.png
+│           │   ├── informer.png
+│           │   ├── probsparse_intro.png
+│           │   ├── result_multivariate.png
+│           │   └── result_univariate.png
+│           │
+│           ├── models
+│           │   ├── attn.py
+│           │   ├── decoder.py
+│           │   ├── embed.py
+│           │   ├── encoder.py
+│           │   ├── model.py
+│           │   └── __init__.py
+│           │
+│           ├── scripts
+│           │   ├── ETTh1.sh
+│           │   ├── ETTh2.sh
+│           │   ├── ETTm1.sh
+│           │   └── WTH.sh
+│           │
+│           └── utils
+│               ├── masking.py
+│               ├── metrics.py
+│               ├── timefeatures.py
+│               ├── tools.py
+│               └── __init__.py
+│
+├── LSTM
+│   └── lstm_t2v.ipynb
+│
+├── mini-projects
+│   ├── miniproj_final.ipynb
+│   └── monthly_milk_production_1.csv
+│
+├── Notes
+│   ├── Notes_01-08-24.md
+│   ├── Notes_18-07-24.md
+│   ├── Notes_19-07-24.md
+│   ├── Notes_21-07-24.md
+│   ├── Notes_23-07-24.md
+│   ├── Notes_24-07-24.md
+│   ├── Notes_25-07-24.md
+│   ├── Notes_28-07-24.md
+│   └── Notes_31_07_24.md
+│   │
+│   └── images
+│
+└── Transformer
+    ├── .txt
+    └── transformer.ipynb
+```
 
 ## 🔨 Data Extracting 
 
