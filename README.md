@@ -2,7 +2,7 @@
 
 A Project by [Khush Agrawal](https://github.com/Khushmagrawal), [Yashvi Mehta](https://github.com/YashviMehta03) and [Ghruank Kothare](https://github.com/Ghruank) and mentored by [Tvisha Vedant](https://github.com/tvilight4) and [Kindipsingh Malhi](https://github.com/kindipsingh)
 
-[Project Blog](https://yashvimehta03.github.io/stock-transformers-blog/)
+[Project Blog](https://yashvimehta03.github.io/stock_transformers_docs/)
 
 ## 📌 Aim
 
